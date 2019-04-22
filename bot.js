@@ -7,7 +7,7 @@ var adminprefix = 'm'
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("$obc")) {
+    if (message.content.startsWith("mbc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;   // Alpha Codes Ghost
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "$";   // Alpha Codes Ghost
+  var prefix = "m";   // Alpha Codes Ghost
 
   client.on("message", message => {   // Alpha Codes Ghost
    
@@ -72,7 +72,7 @@ m.sendMessage(args)
   
   
   client.on("message", message => {
-    if (message.content === "$help") {
+    if (message.content === "mhelp") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
@@ -90,7 +90,7 @@ m.sendMessage(args)
    }
    });
 
-const developers = ["472413769700474901","id"]
+const developers = ["472413769700474901","314522365218521099"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');  // Alpha Codes Ghost
       if (!developers.includes(message.author.id)) return;
