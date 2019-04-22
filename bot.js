@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "$"
-var adminprefix = '$'
+var prefix = "m"
+var adminprefix = 'm'
  // Alpha Codes Ghost
 
 //bc
@@ -66,7 +66,7 @@ m.sendMessage(args)
 });
 
   client.on('message', msg => {
-    if(msg.content === '$help')
+    if(msg.content === 'mhelp')
     msg.reply('Check Your DM :white_check_mark:')  // Alpha Codes Ghost
   });
   
